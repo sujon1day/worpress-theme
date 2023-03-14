@@ -3,6 +3,8 @@
  * the main template file
  */
 get_header(); ?>
+
+    <h1>This is Author template</h1>
     
     <section id="body_area">
         <div class="container">
@@ -14,4 +16,6 @@ get_header(); ?>
         </div>
     </section>
 
+
+    
     <?php get_footer(); ?>

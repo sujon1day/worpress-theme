@@ -1,9 +1,198 @@
 /* Common CSS */
 img{
-    max-width: 100%;
+    max-width: 125px;
 }
 
 /* Header area styles */
+#notic{
+    background-color: #ff6b6b;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#notic p{
+    margin: 0;
+}
 #header_area{
     padding: 15px 0;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+
+}
+
+/* navbar  */
+#main_menu {
+    width: 100%;
+    clear: both;
+    font-weight: 500;
+}
+
+.inner_menu {
+    background: #ffffff;
+    position: relative;
+    min-height: 30px;
+    padding: 15px 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.inner_menu::after {
+    background: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+}
+
+#main_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#main_menu ul li {
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+
+#main_menu ul li a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding: 2px;
+}
+
+#main_menu ul li a:hover {
+    color: #ba2e1f;
+}
+
+#main_menu ul li:hover a {
+    color: #ba2e1f;
+}
+
+#main_menu ul li:hover ul li a {
+    color: #ffffff;
+}
+
+#main_menu ul li:hover a {
+    color: #ba2e1f;
+}
+
+
+
+
+
+
+
+
+/*    Dropdown Style*/
+
+#main_menu ul ul {
+    position: absolute;
+    background: #ba2e1f;
+    width: 180px;
+    left: -999999px;
+    top: 28px;
+}
+
+#main_menu ul li:hover ul {
+    left: 0px;
+}
+
+#main_menu ul ul li {
+    margin: 0;
+    display: block;
+}
+
+#main_menu ul ul li:hover {
+    background: #333;
+}
+
+#main_menu ul ul li a:hover {
+    color: #fff;
+    background: #333;
+}
+
+#main_menu ul ul li:hover a {
+    color: #fff;
+    background: #333;
+}
+
+#main_menu ul ul li:hover ul li a {
+    background: none;
+    color: #fff;
+}
+
+#main_menu ul ul li ul li a:hover {
+    background: #333;
+    color: #fff;
+}
+
+#main_menu ul ul ul {
+    left: -999999px;
+    top: 0px;
+}
+
+#main_menu ul li:hover ul li ul {
+    left: -999999px;
+}
+
+#main_menu ul li ul li:hover ul {
+    left: 180px;
+    top: 0px;
+}
+
+
+
+/* Menu Position  */
+#header_area.left_menu .col-md-3{
+    order: 2;
+}
+
+#header_area.left_menu .col-md-9{
+    order: 1;
+}
+
+#header_area.center_menu .row{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header_area.center_menu .col-md-3{
+    
+    text-align: center;
+}
+#header_area.center_menu .col-md-9{
+    text-align: center;
+}
+
+
+
+/* copyright area settings */
+#footer_area {
+    background-color: #292929;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+#copyright_area p{
+    margin: 0;
+    color: #fff;
+    font-size: 15px;
+}
+#copyright_area p a{
+    color: #ea1a70;
+}
+#copyright_area p a:hover{
+    text-decoration: underline;
 }

@@ -3,6 +3,8 @@
  * the main template file
  */
 get_header(); ?>
+
+    <h1>This is Archive template</h1>
     
     <section id="body_area">
         <div class="container">
@@ -13,5 +15,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
+
+
 
     <?php get_footer(); ?>
